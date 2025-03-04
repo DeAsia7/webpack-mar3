@@ -2,7 +2,7 @@ import { add, subtract, multiply, divide} from './calculator.js'
 
 document.addEventListener('DOMContentLoaded',function(){
     const numberInput = document.getElementById('num1');
-    const numberInput2 = document.getElementById('num2');
+    const number2Input = document.getElementById('num2');
     const operatorSelect = document.getElementById('operator');
     const calculateButton = document.getElementById('calculate');
     const result = document.getElementById('result');
@@ -17,7 +17,7 @@ let result;
 //is NaN(1) --> false
 
 if(isNaN(number1) || isNaN(number2))
-    resultSelection.inner.text = 'Please enter a valid number';
+    resultSelection.innerText = 'Please enter a valid number';
      return;
 })
 switch(operation) {
@@ -38,7 +38,7 @@ default:
      break;
 }
 
-resultSelection.innerText = `result ${result}`;
+resultSelection.innerText = (`result ${result}`);
 
 })
 /*
